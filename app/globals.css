@@ -6,10 +6,42 @@ body {
   background-color: #10172a;
 }
 
+/* Custom theming */
 @theme {
-  /* ... */
+  /* Adding colors */
+  --color-chestnut: #973f29;
 }
 
+/* Custom classes and components */
+@layer components {
+  .btn {
+    @apply bg-chestnut text-white m-10 rounded-lg p-4;
+  }
+
+  .card {
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+  }
+
+  .btn-toggle {
+    @apply px-4 py-2 text-sm font-medium mt-8 text-blue-900 bg-blue-100 rounded-md;
+  }
+}
+
+/* For base elements */
+@layer base {
+  h3 {
+    @apply text-base font-medium tracking-tight text-slate-900 dark:text-white;
+  }
+
+  p {
+    @apply mt-2 text-sm text-slate-500 dark:text-blue-100;
+  }
+}
+
+/* Fully custom utility styles */
+@utility flex-center{
+  @apply flex items-center justify-center;
+}
 
 /* This is the standard generated code */
 /* @import "tailwindcss";

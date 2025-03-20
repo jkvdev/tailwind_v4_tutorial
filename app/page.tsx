@@ -49,39 +49,39 @@ export default function Home() {
       <br />
 
       {/* Implement dark mode */}
-      <div className="bg-white dark:bg-black dark:text-white">
+      <div
+        className={`bg-white dark:bg-black dark:text-white ${dark && "dark"}`}
+      >
         Dark mode disabled
       </div>
 
       <br />
 
       {/* JS Toggle dark mode */}
-      <div
-        className={`m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black ${
-          dark && "dark"
-        }`}
-      >
-        <h3 className="text-base font-medium tracking-tight text-slate-900 dark:text-white">
-          Writes Upside-Down
-        </h3>
-        <p className="mt-2 text-sm text-slate-500 dark:text-blue-100">
+      <div className={`card ${dark && "dark"}`}>
+        <h3>Writes Upside-Down</h3>
+        <p>
           The Zero Gravity Pen can be used to write in any orientation,
           including upside-down. It even works in outer space.
         </p>
 
-        <button
-          id="toggleDark"
-          className="px-4 py-2 text-sm font-medium mt-8 text-blue-900 bg-blue-100 rounded-md"
-          onClick={toggleDarkMode}
-        >
+        <button className="btn-toggle" onClick={toggleDarkMode}>
           Toggle Dark Mode
         </button>
       </div>
 
       <br />
 
-      {/* Image component */}
-      
+      {/* Custom styles */}
+      <div className="bg-white p-2 mt-2">
+        <p className="text-chestnut  font-extrabold text-2xl mt-2">
+          Hello World
+        </p>
+
+        <button className="btn">Hello Button</button>
+      </div>
+
+      <br />
     </>
   );
 }
