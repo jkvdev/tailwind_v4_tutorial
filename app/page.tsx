@@ -82,6 +82,48 @@ export default function Home() {
       </div>
 
       <br />
+
+      {/* Tips and tricks */}
+      {/* Accenting html utilities like checkboxes */}
+      <div className="my-2 w-full flex-center gap-6">
+        <input type="checkbox" className="size-8" />
+        <input type="checkbox" className="accent-pink-500 size-8" />
+        <input type="checkbox" className="accent-green-400 size-8" />
+      </div>
+
+      <br />
+
+      {/* Fluid Text */}
+      <div className="text-[min(10vw,70px)] text-white mb-16">Fluid Text</div>
+
+      <br />
+
+      {/* File Inputs */}
+      <div className="p-4 mb-16">
+        <label className="my-4 block">
+          <input
+            type="file"
+            className="block w-full text-slate-500 file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100 file:transition-all file:duration-150 file:ease-in-out"
+          />
+        </label>
+      </div>
+
+      <br />
+
+      {/* Highlights */}
+      <div className="selection:bg-green-400 selection:text-white p-4 mb-16">
+        <h3 className="text-white">Highlights</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aut
+          dolore perferendis reiciendis necessitatibus pariatur distinctio,
+          ipsum corrupti atque fuga nesciunt. Et quaerat voluptate cumque
+          temporibus earum aut doloremque nam? Ut atque consequatur, voluptatem,
+          ullam cum ex est facere totam recusandae quia necessitatibus nobis ea
+          quasi a porro labore deleniti unde omnis explicabo, obcaecati
+          perspiciatis debitis officiis sapiente. Quia, nulla!
+        </p>
+      </div>
     </>
   );
 }
